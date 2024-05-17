@@ -1,0 +1,227 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.app-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: bold;
+  background-color: #6c757d;
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #495057;
+}
+
+.add-book-form {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #17a2b8;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #495057;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  min-width: 600px; /* Ensures the table doesn't shrink too much */
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+table th {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+table td {
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 80px;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button.edit {
+  background-color: #28a745;
+}
+
+button.edit:hover {
+  background-color: #218838;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .app {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: calc(100% - 24px);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  nav ul li a {
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: calc(100% - 18px);
+  }
+
+  nav ul li a {
+    padding: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  textarea {
+    width: calc(100% - 16px);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    text-align: center;
+    padding: 12px;
+  }
+}
